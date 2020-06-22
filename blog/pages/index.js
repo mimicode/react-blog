@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { Button } from 'antd'
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1>项目开始</h1>
+      <Button>真的开始了，安装依赖</Button>
     </div>
   )
 }
