@@ -6,6 +6,8 @@ import React, { useState } from 'react'
 import {CalendarOutlined,FolderOutlined,FireOutlined} from "@ant-design/icons"
 import "../public/pages/index.css"
 import Author from '../components/Author'
+import Adver from '../components/Adver'
+import Adtabs from '../components/Adtabs'
 
 export default function Home() {
   const [ mylist , setMylist ] = useState(
@@ -47,7 +49,13 @@ export default function Home() {
        <Header />
        <Twolayout 
           left={leftContext}
-          right={ <Author/> }
+          right={ 
+            <>
+              <Author/>
+              <Adtabs/>
+              <Adver/> 
+            </>
+           }
        /> 
     </div>
   )
